@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "CorporateActionsListing";
+    ViewBag.Title = "DividendListing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Corporate Action Report</h2>
+@using (Html.BeginForm("DownloadCorporateAction", "Report"))
+{
+    <p>
+        Enter Start Date: @Html.TextBox("fromDate", "2002-01-01" )
+        Enter EndDate: @Html.TextBox("Todate","2003-01-01" )
+        <input type="submit" value="Export" />
+    </p>
+}
+
+<h2>Dividend Report</h2>
+@using (Html.BeginForm("DownloadDividend", "Report"))
+{
+    <p>
+        Enter Start Date: @Html.TextBox("fromDate", "2002-01-01")
+        Enter EndDate: @Html.TextBox("Todate", "2003-01-01")
+        <input type="submit" value="Export" />
+    </p>
+}

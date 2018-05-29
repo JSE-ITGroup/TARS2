@@ -1,0 +1,144 @@
+﻿@model TARS2.DBModel.FinancialDueDate
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Financial Due Date</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FinancialDueDate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InstrumentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstrumentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StockTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StockTypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndFiscalYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndFiscalYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q1Due)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q1Due)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q2Due)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q2Due)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q3Due)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q3Due)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q4Due)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q4Due)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuditedDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuditedDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnnualDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnnualDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instrument.ISIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instrument.ISIN)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

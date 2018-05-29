@@ -1,0 +1,153 @@
+﻿@model IEnumerable<TARS2.DBModel.Instrument>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdInstrument)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdInstrumentType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdSector)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdMarketSegment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstrumentTypeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaysClose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SectorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MarketId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstrumentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterestRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaturityDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suspended)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tradeable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateDeleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstrumentShortName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdInstrument)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdInstrumentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdSector)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdMarketSegment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstrumentTypeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaysClose)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SectorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MarketId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstrumentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterestRate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaturityDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedOn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Suspended)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tradeable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedOn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateDeleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstrumentShortName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InstrumentCode }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InstrumentCode }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InstrumentCode })
+        </td>
+    </tr>
+}
+
+</table>

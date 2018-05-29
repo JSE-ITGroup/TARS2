@@ -1,0 +1,293 @@
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\csc.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\vbc.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\log4net.Config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\CA listing_GV.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\Dividend listing_GV.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\CorporateActionsListing.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\CA listing_GV.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\CorporateActionsListing1.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Rpts\Dividend listing_GV.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\TARS2.dll.config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\TARS2.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\TARS2.pdb
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Antlr3.Runtime.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportSource.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.Shared.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.Web.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\EntityFramework.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\EntityFramework.SqlServer.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\log4net.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Newtonsoft.Json.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\PagedList.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\PagedList.Mvc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Helpers.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Mvc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Optimization.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Razor.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.Razor.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\WebGrease.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\stdole.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\log4net.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\PagedList.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\PagedList.Mvc.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Helpers.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Mvc.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Optimization.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.Razor.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\System.Web.WebPages.Razor.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Antlr3.Runtime.pdb
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Newtonsoft.Json.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\EntityFramework.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\EntityFramework.SqlServer.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\obj\Debug\TARS2.csprojResolveAssemblyReference.cache
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\obj\Debug\TARS2.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2015\Projects\TARS2\TARS2\obj\Debug\TARS2.pdb
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\csc.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\vbc.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\log4net.Config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\CA listing_GV.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\Dividend listing_GV.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\CorporateActionsListing.rpt
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\CA listing_GV.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\CorporateActionsListing1.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Rpts\Dividend listing_GV.cs
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\TARS2.dll.config
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\TARS2.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\TARS2.pdb
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Antlr3.Runtime.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\EntityFramework.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\EntityFramework.SqlServer.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\log4net.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Newtonsoft.Json.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Owin.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\PagedList.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\PagedList.Mvc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Helpers.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Mvc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Optimization.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Razor.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.Razor.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\WebGrease.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\stdole.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\log4net.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\PagedList.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\PagedList.Mvc.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Helpers.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Mvc.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Optimization.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.Razor.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\System.Web.WebPages.Razor.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Antlr3.Runtime.pdb
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Newtonsoft.Json.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\EntityFramework.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\EntityFramework.SqlServer.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\obj\Debug\TARS2.csprojResolveAssemblyReference.cache
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\obj\Debug\TARS2.csproj.CoreCompileInputs.cache
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\obj\Debug\TARS2.dll
+C:\Users\au_xavier.watson\Documents\Visual Studio 2017\Projects\TARS2\TARS2\obj\Debug\TARS2.pdb
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\csc.exe
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\vbc.exe
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\log4net.Config
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\CA listing_GV.rpt
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\Dividend listing_GV.rpt
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\CorporateActionsListing.rpt
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\CA listing_GV.cs
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\CorporateActionsListing1.cs
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Rpts\Dividend listing_GV.cs
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\TARS2.dll.config
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\TARS2.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\TARS2.pdb
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Antlr3.Runtime.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\EntityFramework.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\EntityFramework.SqlServer.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\log4net.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Newtonsoft.Json.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Owin.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\PagedList.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\PagedList.Mvc.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Helpers.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Mvc.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Optimization.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Razor.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.Razor.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\WebGrease.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\stdole.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\log4net.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\PagedList.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\PagedList.Mvc.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Helpers.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Mvc.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Optimization.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.Razor.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\System.Web.WebPages.Razor.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Antlr3.Runtime.pdb
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Newtonsoft.Json.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\EntityFramework.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\EntityFramework.SqlServer.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\obj\Debug\TARS2.csprojResolveAssemblyReference.cache
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\obj\Debug\TARS2.csproj.CoreCompileInputs.cache
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\obj\Debug\TARS2.dll
+C:\Users\au_xavier.watson\source\repos\TARS2\TARS2\obj\Debug\TARS2.pdb

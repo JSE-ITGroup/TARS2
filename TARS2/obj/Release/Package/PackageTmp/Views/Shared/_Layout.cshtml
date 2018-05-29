@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - JSE TARS WEB APPLICATION</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("TARS WEB APP 2.0", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Bond Indices", "Index", "BondIndexDetails")</li>
+                    <li>@Html.ActionLink("Company Earnings", "Index", "CompanyEarnings")</li>
+                    <li>@Html.ActionLink("Corporate Actions", "Index", "CorporateActions")</li>
+                    <li>@Html.ActionLink("Dividends", "Index", "Dividend")</li>
+                    <li>@Html.ActionLink("Financial Due Dates", "Index", "FinancialDueDates")</li>
+                    <li>@Html.ActionLink("Instruments", "Index", "Instruments")</li>
+                    <li><a href="http://10.240.18.213:8099/">Reports</a></li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -Jamaica Stock Exchange</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

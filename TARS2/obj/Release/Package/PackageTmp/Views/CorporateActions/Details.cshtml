@@ -1,0 +1,71 @@
+﻿@model TARS2.DBModel.CorporateAction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Corporate Actions</h2>
+
+<fieldset>
+    <legend>CorporateAction</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.InstrumentCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InstrumentCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RecordDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ActionCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ActionCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SplitRatio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SplitRatio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Issue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Issue)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Share)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Share)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

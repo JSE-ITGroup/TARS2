@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebFeedRepositoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BondIndex">
+    <Key>
+      <PropertyRef Name="BondIndexID" />
+    </Key>
+    <Property Name="BondIndexID" Type="int" Nullable="false" />
+    <Property Name="BondIndexName" Type="varchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="BondIndexDetails">
+    <Key>
+      <PropertyRef Name="BondIndexDetailID" />
+    </Key>
+    <Property Name="BondIndexDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BondIndexID" Type="int" Nullable="false" />
+    <Property Name="ValueDate" Type="date" Nullable="false" />
+    <Property Name="Value" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PreviousValue" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ValueChange" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PercentageChange" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CompanyEarnings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstrumentID" Type="int" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Annual" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Q1" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Q2" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Q3" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Q4" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Currency" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="CorporateAction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="ExDate" Type="datetime" />
+    <Property Name="ActionCode" Type="char" MaxLength="1" />
+    <Property Name="SplitRatio" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="Issue" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="Share" Type="numeric" Precision="15" Scale="0" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CorporateActionTypes">
+    <Key>
+      <PropertyRef Name="ActionCode" />
+    </Key>
+    <Property Name="ActionCode" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Description" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="Description2" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="FIRequired" Type="char" MaxLength="1" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="ShortName" Type="varchar" MaxLength="255" />
+    <Property Name="LongName" Type="varchar" MaxLength="255" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Capital" Type="varchar" MaxLength="255" />
+    <Property Name="City" Type="varchar" MaxLength="255" />
+    <Property Name="AdjcentCity" Type="varchar" MaxLength="255" />
+    <Property Name="CurrencyDescription" Type="varchar" MaxLength="255" />
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="255" />
+    <Property Name="CurrShortName" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" Nullable="false" />
+    <Property Name="Currency" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Dividend">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="CashDividend" Type="numeric" Precision="15" Scale="6" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="XDate" Type="datetime" />
+    <Property Name="PayDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="ShareType" Type="char" MaxLength="4" />
+    <Property Name="Currency" Type="char" MaxLength="3" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="FinancialDueDate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstrumentID" Type="int" />
+    <Property Name="StockTypeID" Type="int" />
+    <Property Name="WebAddress" Type="varchar" MaxLength="150" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="50" />
+    <Property Name="EndFiscalYear" Type="date" />
+    <Property Name="Year" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="Q1Due" Type="date" />
+    <Property Name="Q2Due" Type="date" />
+    <Property Name="Q3Due" Type="date" />
+    <Property Name="Q4Due" Type="date" />
+    <Property Name="AuditedDue" Type="date" />
+    <Property Name="AnnualDue" Type="date" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="128" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Instruments">
+    <Key>
+      <PropertyRef Name="InstrumentCode" />
+    </Key>
+    <Property Name="IdInstrument" Type="int" Nullable="false" />
+    <Property Name="ISIN" Type="nvarchar" MaxLength="25" />
+    <Property Name="IdInstrumentType" Type="int" />
+    <Property Name="IdSector" Type="int" />
+    <Property Name="IdMarketSegment" Type="int" />
+    <Property Name="InstrumentTypeId" Type="int" />
+    <Property Name="DaysClose" Type="decimal" Precision="30" Scale="6" />
+    <Property Name="SectorId" Type="int" />
+    <Property Name="MarketId" Type="int" />
+    <Property Name="WebAddress" Type="varchar" MaxLength="150" />
+    <Property Name="InstrumentCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="InstrumentName" Type="nvarchar" MaxLength="250" />
+    <Property Name="InterestRate" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="MaturityDate" Type="datetime" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="25" />
+    <Property Name="Suspended" Type="nvarchar" MaxLength="25" />
+    <Property Name="Tradeable" Type="nvarchar" MaxLength="25" />
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="DateDeleted" Type="datetime" />
+    <Property Name="InstrumentShortName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WebFeedRepository.dbo.Sectors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sectors">
+    <Key>
+      <PropertyRef Name="STT_IdSector" />
+    </Key>
+    <Property Name="STT_IdSector" Type="int" Nullable="false" />
+    <Property Name="SectorId" Type="int" />
+    <Property Name="SectorName" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StockTypes">
+    <Key>
+      <PropertyRef Name="StockTypeID" />
+    </Key>
+    <Property Name="StockTypeID" Type="int" Nullable="false" />
+    <Property Name="StockType" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <Association Name="FK_BondIndexDetails_BondIndex">
+    <End Role="BondIndex" Type="Self.BondIndex" Multiplicity="1" />
+    <End Role="BondIndexDetails" Type="Self.BondIndexDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BondIndex">
+        <PropertyRef Name="BondIndexID" />
+      </Principal>
+      <Dependent Role="BondIndexDetails">
+        <PropertyRef Name="BondIndexID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyEarnings_Currency">
+    <End Role="Currency" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="CompanyEarnings" Type="Self.CompanyEarnings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="CompanyEarnings">
+        <PropertyRef Name="Currency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyEarnings_Instruments">
+    <End Role="Instruments" Type="Self.Instruments" Multiplicity="1" />
+    <End Role="CompanyEarnings" Type="Self.CompanyEarnings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="CompanyEarnings">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CorporateAction_CorporateActionTypes">
+    <End Role="CorporateActionTypes" Type="Self.CorporateActionTypes" Multiplicity="0..1" />
+    <End Role="CorporateAction" Type="Self.CorporateAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CorporateActionTypes">
+        <PropertyRef Name="ActionCode" />
+      </Principal>
+      <Dependent Role="CorporateAction">
+        <PropertyRef Name="ActionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CorporateAction_Instruments">
+    <End Role="Instruments" Type="Self.Instruments" Multiplicity="1" />
+    <End Role="CorporateAction" Type="Self.CorporateAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="CorporateAction">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Currency_Instruments">
+    <End Role="Instruments" Type="Self.Instruments" Multiplicity="0..1" />
+    <End Role="Currency" Type="Self.Currency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="Currency">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dividend_Instruments">
+    <End Role="Instruments" Type="Self.Instruments" Multiplicity="1" />
+    <End Role="Dividend" Type="Self.Dividend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="Dividend">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FinancialDueDate_Instruments">
+    <End Role="Instruments" Type="Self.Instruments" Multiplicity="1" />
+    <End Role="FinancialDueDate" Type="Self.FinancialDueDate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="FinancialDueDate">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_CorporateActionListing" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetBondIndex" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCompanyEarnings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCorporateActions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCorporateActionsTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCountries" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCurrencies" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetDividend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetStockTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetSymbols" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="WebFeedRepositoryModelStoreContainer">
+    <EntitySet Name="BondIndex" EntityType="Self.BondIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BondIndexDetails" EntityType="Self.BondIndexDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyEarnings" EntityType="Self.CompanyEarnings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CorporateAction" EntityType="Self.CorporateAction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CorporateActionTypes" EntityType="Self.CorporateActionTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currency" EntityType="Self.Currency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dividend" EntityType="Self.Dividend" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FinancialDueDate" EntityType="Self.FinancialDueDate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Instruments" EntityType="Self.Instruments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StockTypes" EntityType="Self.StockTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sectors" EntityType="Self.Sectors" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sectors].[STT_IdSector] AS [STT_IdSector], 
+    [Sectors].[SectorId] AS [SectorId], 
+    [Sectors].[SectorName] AS [SectorName], 
+    [Sectors].[CreatedOn] AS [CreatedOn], 
+    [Sectors].[ModifiedOn] AS [ModifiedOn]
+    FROM [dbo].[Sectors] AS [Sectors]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_BondIndexDetails_BondIndex" Association="Self.FK_BondIndexDetails_BondIndex">
+      <End Role="BondIndex" EntitySet="BondIndex" />
+      <End Role="BondIndexDetails" EntitySet="BondIndexDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyEarnings_Currency" Association="Self.FK_CompanyEarnings_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="CompanyEarnings" EntitySet="CompanyEarnings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyEarnings_Instruments" Association="Self.FK_CompanyEarnings_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="CompanyEarnings" EntitySet="CompanyEarnings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CorporateAction_CorporateActionTypes" Association="Self.FK_CorporateAction_CorporateActionTypes">
+      <End Role="CorporateActionTypes" EntitySet="CorporateActionTypes" />
+      <End Role="CorporateAction" EntitySet="CorporateAction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CorporateAction_Instruments" Association="Self.FK_CorporateAction_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="CorporateAction" EntitySet="CorporateAction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Currency_Instruments" Association="Self.FK_Currency_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="Currency" EntitySet="Currency" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dividend_Instruments" Association="Self.FK_Dividend_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="Dividend" EntitySet="Dividend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FinancialDueDate_Instruments" Association="Self.FK_FinancialDueDate_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="FinancialDueDate" EntitySet="FinancialDueDate" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

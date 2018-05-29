@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cbae56c1ef0c467d89d8a565e48ffa52" Name="Diagram1">
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.BondIndex" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.BondIndexDetail" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.CompanyEarning" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.CorporateAction" Width="1.5" PointX="6" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.CorporateActionType" Width="1.5" PointX="3.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.Country" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.Dividend" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.FinancialDueDate" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.Instrument" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.StockType" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.Sector" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_BondIndexDetails_BondIndex" ManuallyRouted="false" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_CompanyEarnings_Instruments" ManuallyRouted="false" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_CorporateAction_CorporateActionTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_CorporateAction_Instruments" ManuallyRouted="false" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_Dividend_Instruments" ManuallyRouted="false" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_FinancialDueDate_Instruments" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="WebFeedRepositoryModel.Currency" Width="1.5" PointX="3" PointY="24.125" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_CompanyEarnings_Currency" />
+        <AssociationConnector Association="WebFeedRepositoryModel.FK_Currency_Instruments" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

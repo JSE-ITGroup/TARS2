@@ -1,0 +1,78 @@
+﻿@model IEnumerable<TARS2.DBModel.CorporateAction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Corporate Actions</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("Symbols", "--Select a Symbol--")
+    <input type="submit" value="Find Symbol" />
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InstrumentCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecordDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActionCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SplitRatio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Issue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Share)
+        </th>
+      <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstrumentCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecordDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SplitRatio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Issue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Share)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div Class="error">@ViewData["NoRecords"]  </div>  

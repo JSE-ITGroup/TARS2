@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebFeedRepositoryModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="BondIndexes">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.BondIndex">
+        <MappingFragment StoreEntitySet="BondIndex">
+          <ScalarProperty Name="BondIndexID" ColumnName="BondIndexID" />
+          <ScalarProperty Name="BondIndexName" ColumnName="BondIndexName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BondIndexDetails">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.BondIndexDetail">
+        <MappingFragment StoreEntitySet="BondIndexDetails">
+          <ScalarProperty Name="BondIndexDetailID" ColumnName="BondIndexDetailID" />
+          <ScalarProperty Name="BondIndexID" ColumnName="BondIndexID" />
+          <ScalarProperty Name="ValueDate" ColumnName="ValueDate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="PreviousValue" ColumnName="PreviousValue" />
+          <ScalarProperty Name="ValueChange" ColumnName="ValueChange" />
+          <ScalarProperty Name="PercentageChange" ColumnName="PercentageChange" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyEarnings">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.CompanyEarning">
+        <MappingFragment StoreEntitySet="CompanyEarnings">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InstrumentID" ColumnName="InstrumentID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Annual" ColumnName="Annual" />
+          <ScalarProperty Name="Q1" ColumnName="Q1" />
+          <ScalarProperty Name="Q2" ColumnName="Q2" />
+          <ScalarProperty Name="Q3" ColumnName="Q3" />
+          <ScalarProperty Name="Q4" ColumnName="Q4" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorporateActions">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.CorporateAction">
+        <MappingFragment StoreEntitySet="CorporateAction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="ExDate" ColumnName="ExDate" />
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="SplitRatio" ColumnName="SplitRatio" />
+          <ScalarProperty Name="Issue" ColumnName="Issue" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorporateActionTypes">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.CorporateActionType">
+        <MappingFragment StoreEntitySet="CorporateActionTypes">
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+          <ScalarProperty Name="FIRequired" ColumnName="FIRequired" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="LongName" ColumnName="LongName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="AdjcentCity" ColumnName="AdjcentCity" />
+          <ScalarProperty Name="CurrencyDescription" ColumnName="CurrencyDescription" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrShortName" ColumnName="CurrShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dividends">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.Dividend">
+        <MappingFragment StoreEntitySet="Dividend">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="CashDividend" ColumnName="CashDividend" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="XDate" ColumnName="XDate" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ShareType" ColumnName="ShareType" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinancialDueDates">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.FinancialDueDate">
+        <MappingFragment StoreEntitySet="FinancialDueDate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InstrumentID" ColumnName="InstrumentID" />
+          <ScalarProperty Name="StockTypeID" ColumnName="StockTypeID" />
+          <ScalarProperty Name="WebAddress" ColumnName="WebAddress" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="EndFiscalYear" ColumnName="EndFiscalYear" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Q1Due" ColumnName="Q1Due" />
+          <ScalarProperty Name="Q2Due" ColumnName="Q2Due" />
+          <ScalarProperty Name="Q3Due" ColumnName="Q3Due" />
+          <ScalarProperty Name="Q4Due" ColumnName="Q4Due" />
+          <ScalarProperty Name="AuditedDue" ColumnName="AuditedDue" />
+          <ScalarProperty Name="AnnualDue" ColumnName="AnnualDue" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instruments">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.Instrument">
+        <MappingFragment StoreEntitySet="Instruments">
+          <ScalarProperty Name="InstrumentShortName" ColumnName="InstrumentShortName" />
+          <ScalarProperty Name="IdInstrument" ColumnName="IdInstrument" />
+          <ScalarProperty Name="ISIN" ColumnName="ISIN" />
+          <ScalarProperty Name="IdInstrumentType" ColumnName="IdInstrumentType" />
+          <ScalarProperty Name="IdSector" ColumnName="IdSector" />
+          <ScalarProperty Name="IdMarketSegment" ColumnName="IdMarketSegment" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+          <ScalarProperty Name="DaysClose" ColumnName="DaysClose" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="MarketId" ColumnName="MarketId" />
+          <ScalarProperty Name="WebAddress" ColumnName="WebAddress" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Suspended" ColumnName="Suspended" />
+          <ScalarProperty Name="Tradeable" ColumnName="Tradeable" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="DateDeleted" ColumnName="DateDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockTypes">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.StockType">
+        <MappingFragment StoreEntitySet="StockTypes">
+          <ScalarProperty Name="StockTypeID" ColumnName="StockTypeID" />
+          <ScalarProperty Name="StockType1" ColumnName="StockType" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sectors">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.Sector">
+        <MappingFragment StoreEntitySet="Sectors">
+          <ScalarProperty Name="STT_IdSector" ColumnName="STT_IdSector" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="SectorName" ColumnName="SectorName" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetBondIndex" FunctionName="WebFeedRepositoryModel.Store.usp_GetBondIndex">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetBondIndex_Result">
+          <ScalarProperty Name="BondIndexID" ColumnName="BondIndexID" />
+          <ScalarProperty Name="BondIndexName" ColumnName="BondIndexName" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCompanyEarnings" FunctionName="WebFeedRepositoryModel.Store.usp_GetCompanyEarnings">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetCompanyEarnings_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InstrumentID" ColumnName="InstrumentID" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Annual" ColumnName="Annual" />
+          <ScalarProperty Name="Q1" ColumnName="Q1" />
+          <ScalarProperty Name="Q2" ColumnName="Q2" />
+          <ScalarProperty Name="Q3" ColumnName="Q3" />
+          <ScalarProperty Name="Q4" ColumnName="Q4" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCorporateActions" FunctionName="WebFeedRepositoryModel.Store.usp_GetCorporateActions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetCorporateActions_Result">
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="ExDate" ColumnName="ExDate" />
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="SplitRatio" ColumnName="SplitRatio" />
+          <ScalarProperty Name="Issue" ColumnName="Issue" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCorporateActionsTypes" FunctionName="WebFeedRepositoryModel.Store.usp_GetCorporateActionsTypes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetCorporateActionsTypes_Result">
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+          <ScalarProperty Name="FIRequired" ColumnName="FIRequired" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCountries" FunctionName="WebFeedRepositoryModel.Store.usp_GetCountries">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetCountries_Result">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCurrencies" FunctionName="WebFeedRepositoryModel.Store.usp_GetCurrencies">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetCurrencies_Result">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDividend" FunctionName="WebFeedRepositoryModel.Store.usp_GetDividend">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetDividend_Result">
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="CashDividend" ColumnName="CashDividend" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="XDate" ColumnName="XDate" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ShareType" ColumnName="ShareType" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetStockTypes" FunctionName="WebFeedRepositoryModel.Store.usp_GetStockTypes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetStockTypes_Result">
+          <ScalarProperty Name="StockTypeID" ColumnName="StockTypeID" />
+          <ScalarProperty Name="StockType" ColumnName="StockType" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSymbols" FunctionName="WebFeedRepositoryModel.Store.usp_GetSymbols">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_GetSymbols_Result">
+          <ScalarProperty Name="InstrumentID" ColumnName="InstrumentID" />
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="WebFeedRepositoryModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="InstrumentCode" ColumnName="InstrumentCode" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Currency1" ColumnName="Currency" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_CorporateActionListing" FunctionName="WebFeedRepositoryModel.Store.usp_CorporateActionListing">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebFeedRepositoryModel.usp_CorporateActionListing_Result">
+          <ScalarProperty Name="ExDate" ColumnName="ExDate" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Every" ColumnName="Every" />
+          <ScalarProperty Name="Issue" ColumnName="Issue" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

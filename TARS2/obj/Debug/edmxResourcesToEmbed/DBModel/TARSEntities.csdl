@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebFeedRepositoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BondIndex">
+    <Key>
+      <PropertyRef Name="BondIndexID" />
+    </Key>
+    <Property Name="BondIndexID" Type="Int32" Nullable="false" />
+    <Property Name="BondIndexName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BondIndexDetails" Relationship="Self.FK_BondIndexDetails_BondIndex" FromRole="BondIndex" ToRole="BondIndexDetails" />
+  </EntityType>
+  <EntityType Name="BondIndexDetail">
+    <Key>
+      <PropertyRef Name="BondIndexDetailID" />
+    </Key>
+    <Property Name="BondIndexDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BondIndexID" Type="Int32" Nullable="false" />
+    <Property Name="ValueDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Value" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PreviousValue" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ValueChange" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PercentageChange" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BondIndex" Relationship="Self.FK_BondIndexDetails_BondIndex" FromRole="BondIndexDetails" ToRole="BondIndex" />
+  </EntityType>
+  <EntityType Name="CompanyEarning">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstrumentID" Type="Int32" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Annual" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Q1" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Q2" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Q3" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Q4" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Currency" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Instrument" Relationship="Self.FK_CompanyEarnings_Instruments" FromRole="CompanyEarnings" ToRole="Instruments" />
+    <NavigationProperty Name="Currency1" Relationship="WebFeedRepositoryModel.FK_CompanyEarnings_Currency" FromRole="CompanyEarning" ToRole="Currency" />
+  </EntityType>
+  <EntityType Name="CorporateAction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RecordDate" Type="DateTime" Precision="3" />
+    <Property Name="ExDate" Type="DateTime" Precision="3" />
+    <Property Name="ActionCode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SplitRatio" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="Issue" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="Share" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CorporateActionType" Relationship="Self.FK_CorporateAction_CorporateActionTypes" FromRole="CorporateAction" ToRole="CorporateActionTypes" />
+    <NavigationProperty Name="Instrument" Relationship="Self.FK_CorporateAction_Instruments" FromRole="CorporateAction" ToRole="Instruments" />
+  </EntityType>
+  <EntityType Name="CorporateActionType">
+    <Key>
+      <PropertyRef Name="ActionCode" />
+    </Key>
+    <Property Name="ActionCode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Description2" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FIRequired" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CorporateActions" Relationship="Self.FK_CorporateAction_CorporateActionTypes" FromRole="CorporateActionTypes" ToRole="CorporateAction" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="ShortName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LongName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Capital" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="AdjcentCity" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CurrencyDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CurrShortName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Dividend">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CashDividend" Type="Decimal" Precision="15" Scale="6" />
+    <Property Name="RecordDate" Type="DateTime" Precision="3" />
+    <Property Name="XDate" Type="DateTime" Precision="3" />
+    <Property Name="PayDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ShareType" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Currency" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Instrument" Relationship="Self.FK_Dividend_Instruments" FromRole="Dividend" ToRole="Instruments" />
+  </EntityType>
+  <EntityType Name="FinancialDueDate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstrumentID" Type="Int32" />
+    <Property Name="StockTypeID" Type="Int32" />
+    <Property Name="WebAddress" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EndFiscalYear" Type="DateTime" Precision="0" />
+    <Property Name="Year" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Q1Due" Type="DateTime" Precision="0" />
+    <Property Name="Q2Due" Type="DateTime" Precision="0" />
+    <Property Name="Q3Due" Type="DateTime" Precision="0" />
+    <Property Name="Q4Due" Type="DateTime" Precision="0" />
+    <Property Name="AuditedDue" Type="DateTime" Precision="0" />
+    <Property Name="AnnualDue" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Instrument" Relationship="Self.FK_FinancialDueDate_Instruments" FromRole="FinancialDueDate" ToRole="Instruments" />
+  </EntityType>
+  <EntityType Name="Instrument">
+    <Key>
+      <PropertyRef Name="InstrumentCode" />
+    </Key>
+    <Property Name="IdInstrument" Type="Int32" Nullable="false" />
+    <Property Name="ISIN" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="IdInstrumentType" Type="Int32" />
+    <Property Name="IdSector" Type="Int32" />
+    <Property Name="IdMarketSegment" Type="Int32" />
+    <Property Name="InstrumentTypeId" Type="Int32" />
+    <Property Name="DaysClose" Type="Decimal" Precision="30" Scale="6" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="MarketId" Type="Int32" />
+    <Property Name="WebAddress" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InstrumentName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="InterestRate" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="MaturityDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Suspended" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Tradeable" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="DateDeleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CompanyEarnings" Relationship="Self.FK_CompanyEarnings_Instruments" FromRole="Instruments" ToRole="CompanyEarnings" />
+    <NavigationProperty Name="CorporateActions" Relationship="Self.FK_CorporateAction_Instruments" FromRole="Instruments" ToRole="CorporateAction" />
+    <NavigationProperty Name="Dividends" Relationship="Self.FK_Dividend_Instruments" FromRole="Instruments" ToRole="Dividend" />
+    <NavigationProperty Name="FinancialDueDates" Relationship="Self.FK_FinancialDueDate_Instruments" FromRole="Instruments" ToRole="FinancialDueDate" />
+    <NavigationProperty Name="Currencies" Relationship="WebFeedRepositoryModel.FK_Currency_Instruments" FromRole="Instrument" ToRole="Currency" />
+    <Property Name="InstrumentShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StockType">
+    <Key>
+      <PropertyRef Name="StockTypeID" />
+    </Key>
+    <Property Name="StockTypeID" Type="Int32" Nullable="false" />
+    <Property Name="StockType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Sector">
+    <Key>
+      <PropertyRef Name="STT_IdSector" />
+    </Key>
+    <Property Name="STT_IdSector" Type="Int32" Nullable="false" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="SectorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_BondIndexDetails_BondIndex">
+    <End Role="BondIndex" Type="Self.BondIndex" Multiplicity="1" />
+    <End Role="BondIndexDetails" Type="Self.BondIndexDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BondIndex">
+        <PropertyRef Name="BondIndexID" />
+      </Principal>
+      <Dependent Role="BondIndexDetails">
+        <PropertyRef Name="BondIndexID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyEarnings_Instruments">
+    <End Role="Instruments" Type="Self.Instrument" Multiplicity="1" />
+    <End Role="CompanyEarnings" Type="Self.CompanyEarning" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="CompanyEarnings">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CorporateAction_CorporateActionTypes">
+    <End Role="CorporateActionTypes" Type="Self.CorporateActionType" Multiplicity="0..1" />
+    <End Role="CorporateAction" Type="Self.CorporateAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CorporateActionTypes">
+        <PropertyRef Name="ActionCode" />
+      </Principal>
+      <Dependent Role="CorporateAction">
+        <PropertyRef Name="ActionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CorporateAction_Instruments">
+    <End Role="Instruments" Type="Self.Instrument" Multiplicity="1" />
+    <End Role="CorporateAction" Type="Self.CorporateAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="CorporateAction">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dividend_Instruments">
+    <End Role="Instruments" Type="Self.Instrument" Multiplicity="1" />
+    <End Role="Dividend" Type="Self.Dividend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="Dividend">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FinancialDueDate_Instruments">
+    <End Role="Instruments" Type="Self.Instrument" Multiplicity="1" />
+    <End Role="FinancialDueDate" Type="Self.FinancialDueDate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instruments">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="FinancialDueDate">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BondIndexes" EntityType="Self.BondIndex" />
+    <EntitySet Name="BondIndexDetails" EntityType="Self.BondIndexDetail" />
+    <EntitySet Name="CompanyEarnings" EntityType="Self.CompanyEarning" />
+    <EntitySet Name="CorporateActions" EntityType="Self.CorporateAction" />
+    <EntitySet Name="CorporateActionTypes" EntityType="Self.CorporateActionType" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Dividends" EntityType="Self.Dividend" />
+    <EntitySet Name="FinancialDueDates" EntityType="Self.FinancialDueDate" />
+    <EntitySet Name="Instruments" EntityType="Self.Instrument" />
+    <EntitySet Name="StockTypes" EntityType="Self.StockType" />
+    <EntitySet Name="Sectors" EntityType="Self.Sector" />
+    <AssociationSet Name="FK_BondIndexDetails_BondIndex" Association="Self.FK_BondIndexDetails_BondIndex">
+      <End Role="BondIndex" EntitySet="BondIndexes" />
+      <End Role="BondIndexDetails" EntitySet="BondIndexDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyEarnings_Instruments" Association="Self.FK_CompanyEarnings_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="CompanyEarnings" EntitySet="CompanyEarnings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CorporateAction_CorporateActionTypes" Association="Self.FK_CorporateAction_CorporateActionTypes">
+      <End Role="CorporateActionTypes" EntitySet="CorporateActionTypes" />
+      <End Role="CorporateAction" EntitySet="CorporateActions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CorporateAction_Instruments" Association="Self.FK_CorporateAction_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="CorporateAction" EntitySet="CorporateActions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dividend_Instruments" Association="Self.FK_Dividend_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="Dividend" EntitySet="Dividends" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FinancialDueDate_Instruments" Association="Self.FK_FinancialDueDate_Instruments">
+      <End Role="Instruments" EntitySet="Instruments" />
+      <End Role="FinancialDueDate" EntitySet="FinancialDueDates" />
+    </AssociationSet>
+    <FunctionImport Name="usp_GetBondIndex" ReturnType="Collection(WebFeedRepositoryModel.usp_GetBondIndex_Result)" />
+    <FunctionImport Name="usp_GetCompanyEarnings" ReturnType="Collection(WebFeedRepositoryModel.usp_GetCompanyEarnings_Result)" />
+    <FunctionImport Name="usp_GetCorporateActions" ReturnType="Collection(WebFeedRepositoryModel.usp_GetCorporateActions_Result)" />
+    <FunctionImport Name="usp_GetCorporateActionsTypes" ReturnType="Collection(WebFeedRepositoryModel.usp_GetCorporateActionsTypes_Result)" />
+    <FunctionImport Name="usp_GetCountries" ReturnType="Collection(WebFeedRepositoryModel.usp_GetCountries_Result)" />
+    <FunctionImport Name="usp_GetCurrencies" ReturnType="Collection(WebFeedRepositoryModel.usp_GetCurrencies_Result)" />
+    <FunctionImport Name="usp_GetDividend" ReturnType="Collection(WebFeedRepositoryModel.usp_GetDividend_Result)" />
+    <FunctionImport Name="usp_GetStockTypes" ReturnType="Collection(WebFeedRepositoryModel.usp_GetStockTypes_Result)" />
+    <FunctionImport Name="usp_GetSymbols" ReturnType="Collection(WebFeedRepositoryModel.usp_GetSymbols_Result)" />
+    <EntitySet Name="Currencies" EntityType="WebFeedRepositoryModel.Currency" />
+    <AssociationSet Name="FK_CompanyEarnings_Currency" Association="WebFeedRepositoryModel.FK_CompanyEarnings_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="CompanyEarning" EntitySet="CompanyEarnings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Currency_Instruments" Association="WebFeedRepositoryModel.FK_Currency_Instruments">
+      <End Role="Instrument" EntitySet="Instruments" />
+      <End Role="Currency" EntitySet="Currencies" />
+    </AssociationSet>
+    <FunctionImport Name="usp_CorporateActionListing" ReturnType="Collection(WebFeedRepositoryModel.usp_CorporateActionListing_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_GetBondIndex_Result">
+    <Property Type="Int32" Name="BondIndexID" Nullable="false" />
+    <Property Type="String" Name="BondIndexName" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCompanyEarnings_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="InstrumentID" Nullable="true" />
+    <Property Type="String" Name="InstrumentCode" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="Decimal" Name="Annual" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Q1" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Q2" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Q3" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Q4" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Int32" Name="Currency" Nullable="true" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="10" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCorporateActions_Result">
+    <Property Type="String" Name="InstrumentCode" Nullable="false" MaxLength="25" />
+    <Property Type="DateTime" Name="RecordDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ExDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ActionCode" Nullable="true" MaxLength="1" />
+    <Property Type="Decimal" Name="SplitRatio" Nullable="true" Precision="3" Scale="0" />
+    <Property Type="Decimal" Name="Issue" Nullable="true" Precision="3" Scale="0" />
+    <Property Type="Decimal" Name="Share" Nullable="true" Precision="15" Scale="0" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCorporateActionsTypes_Result">
+    <Property Type="String" Name="ActionCode" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Description2" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FIRequired" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCountries_Result">
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="CountryCode" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCurrencies_Result">
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="String" Name="Currency" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetDividend_Result">
+    <Property Type="String" Name="InstrumentCode" Nullable="false" MaxLength="25" />
+    <Property Type="Decimal" Name="CashDividend" Nullable="true" Precision="15" Scale="6" />
+    <Property Type="DateTime" Name="RecordDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="XDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="PayDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="InstrumentName" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ShareType" Nullable="true" MaxLength="4" />
+    <Property Type="String" Name="Currency" Nullable="true" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="usp_GetStockTypes_Result">
+    <Property Type="Int32" Name="StockTypeID" Nullable="false" />
+    <Property Type="String" Name="StockType" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetSymbols_Result">
+    <Property Type="Int64" Name="InstrumentID" Nullable="true" />
+    <Property Type="String" Name="InstrumentCode" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="InstrumentName" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="Int32" Nullable="false" />
+    <Property Name="Currency1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="InstrumentCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CompanyEarnings" Relationship="WebFeedRepositoryModel.FK_CompanyEarnings_Currency" FromRole="Currency" ToRole="CompanyEarning" />
+    <NavigationProperty Name="Instrument" Relationship="WebFeedRepositoryModel.FK_Currency_Instruments" FromRole="Currency" ToRole="Instrument" />
+  </EntityType>
+  <Association Name="FK_CompanyEarnings_Currency">
+    <End Type="WebFeedRepositoryModel.Currency" Role="Currency" Multiplicity="0..1" />
+    <End Type="WebFeedRepositoryModel.CompanyEarning" Role="CompanyEarning" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="CompanyEarning">
+        <PropertyRef Name="Currency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Currency_Instruments">
+    <End Type="WebFeedRepositoryModel.Instrument" Role="Instrument" Multiplicity="0..1" />
+    <End Type="WebFeedRepositoryModel.Currency" Role="Currency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instrument">
+        <PropertyRef Name="InstrumentCode" />
+      </Principal>
+      <Dependent Role="Currency">
+        <PropertyRef Name="InstrumentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="usp_CorporateActionListing_Result">
+    <Property Type="DateTime" Name="ExDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="RecordDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="InstrumentName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="15" />
+    <Property Type="Decimal" Name="Every" Nullable="true" Precision="3" Scale="0" />
+    <Property Type="Decimal" Name="Issue" Nullable="true" Precision="3" Scale="0" />
+    <Property Type="Decimal" Name="Share" Nullable="true" Precision="15" Scale="0" />
+  </ComplexType>
+</Schema>

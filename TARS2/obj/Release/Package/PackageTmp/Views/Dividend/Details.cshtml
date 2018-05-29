@@ -1,0 +1,71 @@
+﻿@model TARS2.DBModel.Dividend
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Dividend Details</h2>
+
+<fieldset>
+    <legend>Dividend</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.InstrumentCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InstrumentCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CashDividend)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CashDividend)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RecordDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.XDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.XDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PayDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PayDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ShareType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ShareType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Currency)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Currency)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

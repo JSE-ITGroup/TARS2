@@ -1,0 +1,74 @@
+﻿@model TARS2.DBModel.CorporateAction
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Corporate Action</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>CorporateAction</legend>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.InstrumentCode)
+    </div>
+    <div class="editor-field">
+
+        @Html.DropDownListFor(model => model.InstrumentCode, (IEnumerable<SelectListItem>)ViewData["Symbols"], "--Select Symbol--")
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RecordDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExDate)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.ActionCode)
+    </div>
+    <div class="editor-field">
+
+        @Html.DropDownListFor(model => model.ActionCode, (IEnumerable<SelectListItem>)ViewData["CorporateActionTypes"], "--Select Action Type--")
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SplitRatio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SplitRatio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Issue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Issue)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Share)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Share)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

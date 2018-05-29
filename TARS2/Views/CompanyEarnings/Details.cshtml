@@ -1,0 +1,114 @@
+﻿@model TARS2.DBModel.CompanyEarning
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Company Earnings Details</h2>
+
+<div>
+    <h4>CompanyEarning</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InstrumentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstrumentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Annual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Annual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Currency)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Currency)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instrument.ISIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instrument.ISIN)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

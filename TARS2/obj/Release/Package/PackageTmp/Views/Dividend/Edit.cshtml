@@ -1,0 +1,108 @@
+﻿@model TARS2.DBModel.Dividend
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Dividend</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Dividend</legend>
+
+        @Html.HiddenFor(model => model.InstrumentCode)
+
+   
+            <div class="form-group">
+                @Html.LabelFor(model => model.InstrumentCode, "InstrumentCode", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+               @Html.DropDownListFor(model => model.InstrumentCode, (IEnumerable<SelectListItem>)ViewData["Symbols"], "--Select Symbol--", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.InstrumentCode, "", htmlAttributes: new { @class = "text-danger" })
+                </div>
+            </div>
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CashDividend)
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CashDividend)
+            @Html.ValidationMessageFor(model => model.CashDividend)
+        </div>
+            </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RecordDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RecordDate)
+            @Html.ValidationMessageFor(model => model.RecordDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.XDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.XDate)
+            @Html.ValidationMessageFor(model => model.XDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PayDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PayDate)
+            @Html.ValidationMessageFor(model => model.PayDate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Currency)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Currency)
+            @Html.ValidationMessageFor(model => model.Currency)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreatedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreatedOn, new { htmlAttributes = new { @class = "form-control",  @readonly = "read-only" } })
+                @*@Html.ValidationMessageFor(model => model.CreatedOn, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreatedBy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreatedBy, new { htmlAttributes = new { @class = "form-control", @readonly = "read-only" } })
+                @*@Html.ValidationMessageFor(model => model.CreatedBy, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ModifiedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ModifiedOn, new { htmlAttributes = new { @class = "form-control",Value = DateTime.Now, @readonly = "read-only" } })
+                @Html.ValidationMessageFor(model => model.ModifiedOn, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ModifiedBy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ModifiedBy, new { htmlAttributes = new { @class = "form-control", Value = User.Identity.Name, @readonly = "read-only" } })
+                @Html.ValidationMessageFor(model => model.ModifiedBy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

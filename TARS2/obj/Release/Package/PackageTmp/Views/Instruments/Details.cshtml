@@ -1,0 +1,186 @@
+﻿@model TARS2.DBModel.Instrument
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Instrument</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdInstrument)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdInstrument)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ISIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ISIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdInstrumentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdInstrumentType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdSector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMarketSegment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdMarketSegment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstrumentTypeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstrumentTypeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaysClose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaysClose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SectorId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SectorId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstrumentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstrumentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterestRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterestRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaturityDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaturityDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Suspended)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suspended)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tradeable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tradeable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrencyCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrencyCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstrumentShortName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstrumentShortName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InstrumentCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

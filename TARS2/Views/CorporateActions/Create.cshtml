@@ -1,0 +1,81 @@
+﻿@model TARS2.DBModel.CorporateAction
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Corporate Actions</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CorporateAction</legend>
+     
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InstrumentCode)
+        </div>
+        <div class="editor-field">
+
+            @Html.DropDownListFor(model => model.InstrumentCode, (IEnumerable<SelectListItem>)ViewData["Symbols"], "--Select Symbol--")
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RecordDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RecordDate)
+            @Html.ValidationMessageFor(model => model.RecordDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ExDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ExDate)
+            @Html.ValidationMessageFor(model => model.ExDate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ActionCode)
+        </div>
+        <div class="editor-field">
+
+            @Html.DropDownListFor(model => model.ActionCode, (IEnumerable<SelectListItem>)ViewData["CorporateActionTypes"], "--Select Action Type--")
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SplitRatio)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SplitRatio)
+            @Html.ValidationMessageFor(model => model.SplitRatio)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Issue)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Issue)
+            @Html.ValidationMessageFor(model => model.Issue)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Share)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Share)
+            @Html.ValidationMessageFor(model => model.Share)
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

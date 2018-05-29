@@ -1,0 +1,81 @@
+﻿@model IEnumerable<TARS2.DBModel.FinancialDueDate>
+
+@{
+    ViewBag.Title = "FinanCial Due Dates";
+}
+
+<h2>Financial Due Dates</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+      @Html.DropDownList("Symbols","--Select a Symbol--")
+    <input type ="submit" value ="Find Symbol" />
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th >
+            @Html.DisplayNameFor(model => model.InstrumentCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndFiscalYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q1Due)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q2Due)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q3Due)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q4Due)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditedDue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnnualDue)
+        </th>       
+        <th>Actions</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instrument.InstrumentCode)
+        </td>        
+        <td>
+            @Html.DisplayFor(modelItem => item.EndFiscalYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q1Due)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q2Due)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q3Due)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q4Due)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditedDue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnnualDue)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
